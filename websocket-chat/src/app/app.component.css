@@ -1,0 +1,14 @@
+/* src/app/app.component.css */
+* { box-sizing: border-box; }
+body, html { margin: 0; font: 14px Helvetica, Arial, sans-serif; }
+.chat { display: flex; flex-direction: column; height: 100vh; }
+#messages { flex: 1; overflow-y: auto; list-style: none; margin: 0; padding: 0; }
+#messages li { padding: 6px 10px; }
+#messages li:nth-child(odd) { background: #f2f2f2; }
+.chat__header { padding: 12px 14px; background: linear-gradient(120deg, #3fb5ff, #2f9edd); color: #fff; }
+.chat__title { margin: 0; font-size: 18px; font-weight: 700; }
+.chat__subtitle { margin: 2px 0 0; font-size: 13px; opacity: 0.9; }
+form { display: flex; padding: 8px; background: #111; gap: 8px; }
+form input { flex: 1; padding: 10px; border: none; border-radius: 4px; }
+form button { padding: 10px 16px; border: none; border-radius: 4px; background: #3fb5ff; color: #000; font-weight: 600; cursor: pointer; }
+form button:hover { background: #2f9edd; }

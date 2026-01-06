@@ -1,0 +1,14 @@
+<!-- src/app/app.component.html -->
+<div class="chat">
+  <header class="chat__header">
+    <h1 class="chat__title">Go + Angular WebSocket Chat</h1>
+    <p class="chat__subtitle">Live messages; no page reloads.</p>
+  </header>
+  <ul id="messages">
+    <li *ngFor="let m of messages" [innerHTML]="render(m)"></li>
+  </ul>
+  <form (submit)="send(); $event.preventDefault();">
+    <input [(ngModel)]="chatBox" name="chat" autocomplete="off" placeholder="Type a message..." />
+    <button type="submit">Send</button>
+  </form>
+</div>
